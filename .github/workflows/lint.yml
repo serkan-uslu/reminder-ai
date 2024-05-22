@@ -3,7 +3,7 @@ name: Lint Code
 on:
   push:
     branches:
-      - main # veya izlemek istediğiniz diğer branşları ekleyin
+      - master
 
 jobs:
   lint:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16' # Projenizin Node.js sürümüne uygun olarak güncelleyin
+          node-version: '16'
 
       - name: Install dependencies
         run: npm install
